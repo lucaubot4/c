@@ -17,43 +17,30 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
-PM_START_TEXT = """
-hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+PM_START_TEXT = ""
+hoi {}, il mio nome è {}! se hai domande su come usarmi per favore dammi / aiuto ...
+Sono un bot manager di gruppo gestito da [questa persona] (tg: // user? id = {}).
+Questo è il mio [Deploy Code] (https://heroku.com/deploy?template=https://github.com/lucaubot4/c.git),
+puoi creare un clone come me ..
+Per ulteriori comandi fare clic su / guida ...
+** Tieni presente che tutte le modifiche apportate al sorgente devono essere su GitHub, come da licenza. **
+"" "
 
-im a group manager bot maintained by  [this person](tg://user?id={}).
-
-My future updates will be put into This Channel - @MarieChechi & My Support Group @InFoTelGroup.
-
-This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English),
-you can create clone same like me..
-
-For more commands click /help...
-
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
-
-"""
-
-HELP_STRINGS = """
-
-Hello! my name *{}*.
-
-*Main* available commands:
- - /start: Start the bot...
- - /help: help....
- - /donate: To find out more about donating!
- - /settings:
-   - in PM: To find out what SETTINGS you have set....
-   - in a group:
-
+HELP_STRINGS  =  "" "
+Ciao! il mio nome *{}*.
+* Principali * comandi disponibili:
+ - / start: avvia il bot ...
+ - /aiuto aiuto....
+ - / donate: per saperne di più sulla donazione!
+ - /impostazioni:
+   - in PM: per scoprire quali IMPOSTAZIONI hai impostato ....
+   - in un gruppo:
 {}
-And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
+E il seguente:
+"" " . format ( dispatcher . bot . first_name , " "  if  not  ALLOW_EXCL  else  " \ n Tutti i seguenti comandi / o! possono essere usati ... \ n " )
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING  =  "" "Heya, felice di sapere che vuoi fare una donazione!
+Ci è voluto molto lavoro per [il mio creatore] (t.me/DarkLukeclapyou). "" "
 
 IMPORTED = {}
 MIGRATEABLE = []
